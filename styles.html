@@ -1,17 +1,54 @@
 <!doctype html>
 <html>
+
 <head>
-<style>            
-</style>
-<script>
-</script>
-</head>    
+    <style>
+        span {
+  background-color: mediumspringgreen;
+  animation-name: animation1;
+  animation-duration: 4s;
+}
+
+@keyframes animation1 {
+  0%   {background-color: mediumseagreen;}
+  25%  {background-color: lightseagreen;}
+  50%  {background-color: darkturquoise;}
+  100% {background-color: cyan;}
+}
+
+.button {
+  background-color: #ff0000;
+  border: 2px outset black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    </style>
+    <script>
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
 <body>
     <div style="border:1px solid black">Black border on a DIV element</div>
-    <span style="border:2px solid red">Red border on a SPAN element</span><b style="border:2px solid green">Green border on a B element</b>
+    <span style="border:2px solid red">Red border on a SPAN element</span><b style="border:2px solid green">Green border
+        on a B element</b>
     <p style="border:3px solid blue">Blue border on a P element</p>
     <div style="border:2px solid green">Green border on a DIV element</div>
     <div style="border:2px solid purple">Purple border on a DIV element</div>
+    <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:midnightblue">Midnight Blue Verdana Font Text</span>
+    <span>I have animated span text so that it changes color.</span>
+    <div style="text-shadow: 2px 2px 5px midnightblue;">below is an icon of a laptop (this text has shadow)</div>
+    <i class="material-icons">computer</i>
     
+    <p>
+    <button class="button">Press this button</button>
+    </p>
 </body>
+
 </html>
